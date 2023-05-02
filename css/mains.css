@@ -2,12 +2,12 @@
 
 :root {
 
-	--accent: #DC6D1C;
-	--background: #DCF9E1;
-	--text: #0C3313;
-	--regular-text: 18px;
-	--lineheight: 1.65;
-	--gap: 25px;
+	--accent: #509121;
+	--background: #FFFF;
+	--text: #1A1D27;
+	--regular-text: 20px;
+	--lineheight: 2;
+	--buttonbackground: #509121;
 	--userfont: roboto-st, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-	color: #ECB124;
+	color: #509121;
 	outline: 0 !important
 }
 
@@ -179,15 +179,15 @@ body {
 /* HEADER STYLES */
 .header_top {
 	background-color: var(--background);
-	height: 70px;
+	height: auto;
 }
 
 .logo {
-	width: 85%;
+	width: 100%;
 }
 
 .menu_top {
-	height: 70px;
+	height: 100px;
 	justify-content: space-between;
 	align-items: center;
 	font-family: RobotoCondensedRegular-st;
@@ -195,7 +195,7 @@ body {
 
 .menu_items {
 	justify-content: space-between;
-	width: 300px;
+	width: 600px;
 	font-size: 18px;
 }
 
@@ -263,19 +263,18 @@ ul.advantages li {
 
 .button {
 	display: inline-block;
-	width: 300px;
+	width: 200px;
 	border: none;
 	color: #fff;
 	text-decoration: none;
 	background-color: var(--accent);
-	padding: 20px 60px;
+	padding: 15px;
 	font-family: OpenSansRegular-st;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
-	line-height: 30px;
+	line-height: 25px;
 	letter-spacing: 0em;
-	text-align: left;
-	border-radius: 6px;
+	border-radius: 2px;
 	text-align: center;
 	position: relative;
 	outline: 0;
