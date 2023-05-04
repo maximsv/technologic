@@ -1,11 +1,11 @@
 /* USER VARIABLES SECTION */
 
 :root {
-
 	--accent: #509121;
 	--background: #FFFF;
 	--text: #1A1D27;
 	--regular-text: 20px;
+	--gap: 25px;
 	--lineheight: 2;
 	--buttonbackground: #509121;
 	--userfont: roboto-st, sans-serif;
@@ -17,6 +17,16 @@
 /* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
 	--bs-gutter-x: .625rem;
+}
+
+html { 
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
 }
 
 .row, .row>* {
@@ -188,6 +198,7 @@ body {
 
 .menu_top {
 	height: 100px;
+	padding: 0 20px;
 	justify-content: space-between;
 	align-items: center;
 	font-family: RobotoCondensedRegular-st;
@@ -200,28 +211,18 @@ body {
 }
 
 .header {
+	background-image: url(/images/fons.png);
+	background-position: center;
+	background-size: cover;
 	min-height: 70vh;
 	grid-template-columns: 1fr 1fr;
 }
 
 .header_left {
 	min-height: 70vh;
-
 	justify-content: center;
 	flex-direction: column;
 	/* text-align: center; */
-}
-
-ul.advantages {
-	margin-left: -30px;
-}
-
-ul.advantages li {
-	display: block;
-	list-style-type: none;
-	font-size: 22px;
-	font-family: var(--userfont);
-	margin-top: var(--gap);
 }
 
 .header_right {
@@ -233,27 +234,32 @@ ul.advantages li {
 	position: relative;
 }
 
-.fon_smaragd {
-	max-height: 100%;
-	padding-left: 50%;
-
-}
-
-.header_left .smaragd {
-	font-size: 86px;
-	font-family: RobotoCondensedBold-st;
+.header_left {
+	padding-left: 50px;
 	align-self: flex-start;
 	position: relative;
 }
 
-.header_left .smaragd::after {
-	content: "";
-	position: absolute;
-	top: 105px;
-	left: 0;
-	height: 2px;
-	width: 75%;
-	background-color: var(--accent);
+.header_left .smaragd {
+	font-weight: normal;
+	font-size: 56px;
+	line-height: 75px;
+	display: flex;
+	align-items: center;
+	font-family: var(--userfont);
+	align-self: flex-start;
+	position: relative;
+	color: #FFFFFF;
+	margin-bottom: var(--gap*2);
+}
+
+.header_left p {
+	font-family: var(--userfont);
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 400;
+	font-size: var(--regular-text);
+	line-height: 40px;
 }
 
 .buttoncase {
@@ -282,7 +288,11 @@ ul.advantages li {
 	-o-transition: background-color 0.8s ease;
 	transition: background-color 0.8s ease;
 	cursor: pointer;
-	margin-top: var(--gap);
+	display: flex;
+	align-items:center;
+	justify-content: center;
+
+
 }
 
 /* CATALOG STYLES */
