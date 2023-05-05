@@ -209,11 +209,12 @@ body {
 	width: 600px;
 	font-size: 18px;
 }
-
-.header {
+.advantages_top{
 	background-image: url(../images/fons.png);
 	background-position: center;
 	background-size: cover;
+}
+.header {
 	min-height: 90vh;
 	grid-template-columns: 1fr 1fr;
 }
@@ -227,9 +228,7 @@ body {
 	align-self: flex-start;
 	position: relative;
 	background: rgba(0, 0, 0, 0.21);
-	/* text-align: center; */
 }
-
 .header_right {
 	width: 100%;
 	justify-content: flex-start;
@@ -377,22 +376,25 @@ body {
 }
 
 .main_work {
-	margin-top: 7vh;
+	width: 700px;
+	/*margin-top: 7vh;*/
+	margin: -70px auto;
 	color: var(--background);
-	/* grid-gap: var(--gap); */
-	grid-template-columns: repeat(4, 1fr);
-	justify-content: center;
 
 }
 
 .section-work {}
 
 .work {
+	flex-direction:column;
 	height: 100%;
 }
 
 .work img {
-	margin-bottom: var(--gap);
+	display: block;
+	width: 100px;
+	max-width: 100%;
+	height: auto;
 }
 
 .work p {
@@ -639,11 +641,11 @@ form label .selectize-dropdown .active {
 }
 
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
+/*.img-responsive {*/
+/*	display: block;*/
+/*	max-width: 100%;*/
+/*	height: auto;*/
+/*}*/
 
 .footer {
 	padding: var(--gap);
