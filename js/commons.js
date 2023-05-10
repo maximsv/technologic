@@ -3,32 +3,24 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     slidesToShow: 4,
-    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    speed: 1000,
+    autoplaySpeed: 800,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
-  // $(".slider").slick({
-  //   arrows: false,
-  //   dots: true,
-  //   slidesToShow: 4,
-  //   autoplay: true,
-  //   speed: 1000,
-  //   autoplaySpeed: 800,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 550,
-  //       settings: {
-  //         slidesToShow: 1,
-  //       },
-  //     },
-  //   ],
-  // });
 });
 
 // $(".top").click(function () {
