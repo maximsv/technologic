@@ -2,10 +2,39 @@ $(document).ready(function () {
   $(".slider").slick({
     arrows: false,
     dots: true,
+    infinite: true,
     slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 800,
+    // centerMode: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $(".slider-card").slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 800,
+    // centerMode: true,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
