@@ -271,7 +271,6 @@ body {
 }
 
 .button {
-	display: inline-block;
 	width: 200px;
 	border: none;
 	color: #fff;
@@ -369,6 +368,10 @@ body {
 	margin-bottom: 30px;
 }
 .slider__item .card{
+	display: flex;
+	flex-direction: column;
+	height: 450px;
+	/*align-items:flex-end;*/
 	/*width: 360px;*/
 }
 .card-title{
@@ -378,9 +381,36 @@ body {
 	line-height: 30px;
 	color: #509121;
 }
-/*.slider-card{*/
-/*	margin-bottom:60px;*/
-/*}*/
+.card-body {
+flex-direction: column;
+	justify-content: center;
+}
+
+.card-body .card-text{
+	font-family: var(--userfont);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	color: #1A1D27;
+}
+.card-body .card-text span{
+	font-weight: 400;
+	color: #509121;
+}
+.card-body .button{
+	margin-top: var(--gap);
+	/*margin-bottom: var(--gap);*/
+	display: flex;
+	align-self:center;
+	align-items:flex-end;
+	border: 1px solid #509121;
+}
+.card-body .button:hover{
+	border: 1px solid #509121;
+	color: #509121;
+	background-color: #FFFFFF;
+}
 .slider-card .slick-dots{
 	margin-top: 30px;
 }
