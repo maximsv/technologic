@@ -9,25 +9,11 @@
 
 /* lg <= Extra large (xl) */
 @media (max-width : 1200px) {
-	.catalog_items {
-		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-	}
+
 }
 
 /* md <= Large (lg) */
 @media (max-width : 992px) {
-	.item_number:nth-of-type(4) {
-		order: 2;
-	}
-
-
-	.header_right {
-		display: none;
-	}
-
-	.menu_top a img {
-		display: none;
-	}
 
 	.header {
 		padding-bottom: var(--gap);

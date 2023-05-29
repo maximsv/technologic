@@ -194,6 +194,8 @@ body {
 
 .menu_items {
 	justify-content: space-between;
+	flex-basis: 600px;
+	flex-wrap: wrap;
 	width: 600px;
 	font-size: 18px;
 }
