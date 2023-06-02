@@ -24,7 +24,18 @@ $(document).ready(function () {
       },
     ],
   });
-
+  $(function () {
+    $('.popup-modal').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#username',
+      modal: true
+    });
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+      e.preventDefault();
+      $.magnificPopup.close();
+    });
+  });
   $(".slider-card").slick({
     arrows: false,
     dots: true,
@@ -85,27 +96,39 @@ $(document).ready(function () {
   });
 });
 
+
+$(function () {
+  $('.popup-modals').magnificPopup({
+    mainClass: 'mfp-forms',
+    focus: '#username',
+  });
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});
+
 // $(".top").click(function () {
 //   $("html, body").animate({ scrollTop: 0 }, "slow");
 //   return false;
 // });
 
-//   //Аякс отправка форм
-//   //Документация: http://api.jquery.com/jquery.ajax/
-// $(".forms").submit(function () {
-//   $.ajax({
-//     type: "POST",
-//     url: "mail.php",
-//     data: $(this).serialize(),
-//   }).done(function () {
-//     alert("Спасибо за заявку!");
-//     setTimeout(function () {
-//       $.magnificPopup.close();
-//       $(".forms").trigger("reset");
-//     }, 1000);
-//   });
-//   return false;
-// });
+  //Аякс отправка форм
+  //Документация: http://api.jquery.com/jquery.ajax/
+$(".forms").submit(function () {
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: $(this).serialize(),
+  }).done(function () {
+    alert("Спасибо за заявку!");
+    setTimeout(function () {
+      $.magnificPopup.close();
+      $(".forms").trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
 
 //Chrome Smooth Scroll
 //   try {
