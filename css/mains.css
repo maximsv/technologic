@@ -183,7 +183,12 @@ body {
 .logo {
 	width: 100%;
 }
-
+.collapse .me-auto{
+	margin: auto;
+}
+.nav-item{
+	padding-right: var(--gap);
+}
 .menu_top {
 	height: 100px;
 	padding: 0 20px;
@@ -192,6 +197,16 @@ body {
 	font-family: RobotoCondensedRegular-st;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: var(--accent);
+}
+.nav-link{
+	font-family: RobotoCondensedRegular-st;
+}
+
+.nav-link:hover{
+	color: var(--accent);
+}
 .menu_items {
 	justify-content: space-between;
 	flex-basis: 600px;
@@ -274,7 +289,7 @@ body {
 
 .button {
 	width: 200px;
-	border: none;
+	border: 2px solid var(--accent);
 	color: #fff;
 	text-decoration: none;
 	background-color: var(--accent);
@@ -296,6 +311,10 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+.button:hover{
+	background-color: #fff;
+	color: var(--accent);
+}
 .popup-modals{
 	/*width: 200px;*/
 }
@@ -306,7 +325,7 @@ body {
 	border: 1px solid var(--accent);
 }
 
-.button_light:hover {
+.button_light:hover{
 	background-color: #fff;
 	color: var(--accent);
 }
@@ -375,7 +394,7 @@ body {
 
 /*CARDS-SECTION*/
 .cards {
-	margin-top: 100px;
+	margin-top: 130px;
 }
 
 .title-dolomite {
@@ -415,8 +434,11 @@ body {
 	-webkit-box-shadow: 8px 34px 20px -31px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 8px 34px 20px -31px rgba(0, 0, 0, 0.75);
 	box-shadow: 8px 34px 20px -31px rgba(0, 0, 0, 0.75);
-}
 
+}
+.card{
+	border-radius: 0;
+}
 .image_card img {
 	width: 300px;
 	height: auto;
@@ -425,7 +447,7 @@ body {
 .card_vertical {
 	flex-direction: column;
 	flex: 0 1 300px;
-	width: 300px;
+	width: 303px;
 	justify-content: center;
 	display: flex;
 }
@@ -618,8 +640,7 @@ body {
 
 .qualiti {
 	color: #509121;
-	margin-bottom: var(--gap);
-/ / styleName: h1(2);
+	margin-bottom: calc(var(--gap)*2);
 	font-family: OpenSansRegular-st;
 	font-size: 50px;
 	font-weight: 700;
@@ -856,12 +877,20 @@ footer.footer {
 /*products.html*/
 /*Section_second_fon*/
 .second_fon {
-
 	height: 200px;
 	background-image: url(../images/bunner.png);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
+}
+.cards_qualiti{
+	text-align: center;
+	color: #509121;
+	font-family: OpenSansRegular-st;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 64px;
+	margin-bottom: 40px;
 }
 
 
@@ -874,14 +903,8 @@ footer.footer {
 }
 
 .cards_grids {
-	margin-top: 70px;
+	margin-top: 100px;
 }
-
-.qualiti {
-	margin-bottom: 20px;
-	text-align: center;
-}
-
 
 /*ABOUT*/
 .about {
@@ -1049,8 +1072,7 @@ footer.footer {
 }
 /*section dolomite*/
 .dolomite {
-	padding-top: 100px;
-	padding-bottom: 50px;
+
 }
 .dolomite_button{
 	width: 200px;
@@ -1059,6 +1081,7 @@ footer.footer {
 	grid-template-columns: 30% 70%;
 justify-content: end;
 	column-gap: 30px;
+	margin-top: 100px;
 }
 .dolomite_left img{
 	/*height: 100%;*/
