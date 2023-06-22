@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  $(".toggle-mnu").click(function () {
+    $(this).toggleClass("on");
+    $(".main-mnu").slideToggle();
+    return false;
+  });
+
   $(".slider").slick({
     arrows: false,
     dots: true,
@@ -25,13 +31,13 @@ $(document).ready(function () {
     ],
   });
   $(function () {
-    $('.popup-modal').magnificPopup({
-      type: 'inline',
+    $(".popup-modal").magnificPopup({
+      type: "inline",
       preloader: false,
-      focus: '#username',
-      modal: true
+      focus: "#username",
+      modal: true,
     });
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
+    $(document).on("click", ".popup-modal-dismiss", function (e) {
       e.preventDefault();
       $.magnificPopup.close();
     });
@@ -62,47 +68,45 @@ $(document).ready(function () {
     ],
   });
 
-  $('.image-popup-vertical-fit').magnificPopup({
-    type: 'image',
+  $(".image-popup-vertical-fit").magnificPopup({
+    type: "image",
     closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile',
+    mainClass: "mfp-img-mobile",
     image: {
-      verticalFit: true
-    }
-
+      verticalFit: true,
+    },
   });
 
-  $('.image-popup-fit-width').magnificPopup({
-    type: 'image',
+  $(".image-popup-fit-width").magnificPopup({
+    type: "image",
     closeOnContentClick: true,
     image: {
-      verticalFit: false
-    }
+      verticalFit: false,
+    },
   });
 
-  $('.image-popup-no-margins').magnificPopup({
-    type: 'image',
+  $(".image-popup-no-margins").magnificPopup({
+    type: "image",
     closeOnContentClick: true,
     closeBtnInside: false,
     fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    mainClass: "mfp-no-margins mfp-with-zoom", // class to remove default margin from left and right side
     image: {
-      verticalFit: true
+      verticalFit: true,
     },
     zoom: {
       enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
+      duration: 300, // don't foget to change the duration also in CSS
+    },
   });
 });
 
-
 $(function () {
-  $('.popup-modals').magnificPopup({
-    mainClass: 'mfp-forms',
-    focus: '#username',
+  $(".popup-modals").magnificPopup({
+    mainClass: "mfp-forms",
+    focus: "#username",
   });
-  $(document).on('click', '.popup-modal-dismiss', function (e) {
+  $(document).on("click", ".popup-modal-dismiss", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
   });
@@ -113,8 +117,8 @@ $(function () {
 //   return false;
 // });
 
-  //Аякс отправка форм
-  //Документация: http://api.jquery.com/jquery.ajax/
+//Аякс отправка форм
+//Документация: http://api.jquery.com/jquery.ajax/
 $(".forms").submit(function () {
   $.ajax({
     type: "POST",
