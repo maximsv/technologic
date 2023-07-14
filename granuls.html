@@ -215,8 +215,8 @@
 				<div class="footer_tel flex">
 					<div class="logo_item coordination">
 						<img src="images/teleph.svg" alt="">&nbsp &nbsp
-						<a href="tel:++380675585101">+380675585101;</a> &nbsp
-						<a href="+380503110184">+380503110184</a>
+						<a href="tel:+380675585101">+380675585101;</a> &nbsp
+						<a href="tel:+380503110184">+380503110184</a>
 					</div>
 					<div class="logo_item">
 						<img src="images/mail.svg" alt="">&nbsp &nbsp<a href="mailto:tovstv2020@gmail.com"> tovstv2020@gmail.com</a>
@@ -240,28 +240,20 @@
 
 
 		<div id="test-modal" class="mfp-hide white-popup-block">
-			< <form class="forms grid" id="callback">
-
-				<h3>Форма зворотнього зв'язку</h3>
-
-				<label>
-					<input type="text" name="name" placeholder="ПІБ" required>
-				</label>
-
-				<label>
-					<input type="text" name="phone" placeholder="Телефон" required>
-				</label>
-				<label>
-					<input type="text" name="mail" placeholder="E-mail">
-				</label>
-
+			<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkorgrp"
+				method="post">
+				<h3 class="forms_text">Форма зворотнього зв’язку</h3>
+				<fieldset id="fs-frm-inputs">
+					<input type="text" name="ім'я" id="full-name" placeholder="ПІБ" required="">
+					<input type="email" name="пошта" id="email-address" placeholder="E- mail" required="">
+					<input type="telephone" name="телефон" id="telephone" placeholder="Телефон">
+					<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+				</fieldset>
 				<div class="button-wrap grid">
-					<a href="" class="button">Зв'язатись</a>
+					<button class="button" type="submit">Зв'язатись</button>
 				</div>
 
-				<input type="hidden" name="formname" value="">
-
-				</form>
+			</form>
 		</div>
 
 	</div>

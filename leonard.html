@@ -100,14 +100,14 @@
 	<section class="dolomite">
 		<div class="container-xxl">
 			<div class="wrapper_dolomite grid">
-				<h3 class="wrapper_dolomite_h hidden">Доломітове борошно з леонардитом</h3>
+				<h3 class="wrapper_dolomite_h hidden">Доломітове борошно з леонардитом (40% + 60%)</h3>
 				<div class="dolomite_left">
 					<img src="images/cards/dolomit%202.png" alt="">
 				</div>
 				<div class="dolomite_right">
 					<div class="dolomite_top grid">
-						<h3>Доломітове борошно з леонардитом</h3>
-						<h4><img src="images/price.svg" alt="">3400 грн з ПДВ <span>1т</span></h4>
+						<h3>Доломітове борошно з леонардитом (40% + 60%)</h3>
+						<h4><img src="images/price.svg" alt="">6500 грн з ПДВ <span>1т</span></h4>
 						<a class="popup-modals dolomite_button" href="#test-modal">
 							<button class="button button_light">Придбати</button>
 						</a>
@@ -115,6 +115,12 @@
 					<div class="dolomite_bottom">
 						<div class="line">Опис</div>
 						<p>
+							<div class="slider__item filters" width="500px" height="900px">
+								<a class="image-popup-no-margins" href="images/dolomite_doc.png">
+									<img src="images/dolomite_doc.png" alt="">
+								</a>
+							</div>
+							<b>Скдад:</b> 40% леонардит+ 60% доломітове борошно. <br><b>Пакування:</b> 1тона в біг-бег. <br> 
 							Це комплексне органічне добриво пролонгованої дії, яке має спеціальний мікроелементний склад, що:
 							забезпечує рослину поживним комплексом мікроелементів; підвищує ефективність дії <span
 								class="green">АЗОТУ, ФОСФОРУ, КАЛІЮ;</span> Нейтралізує надлишкову кислотність ґрунту; структурує ґрунт;
@@ -173,7 +179,7 @@
 						</p>
 
 						<div class="dolomite_bottom grid">
-							<h4><img src="images/price.svg" alt="">3400 грн з ПДВ </h4>
+							<h4><img src="images/price.svg" alt="">6500 грн з ПДВ </h4>
 							<h4 class="round"><span>1т</span></h4>
 							<a class="popup-modals dolomite_button button_bottom" href="#test-modal">
 								<button class="button button_light">Придбати</button>
@@ -215,8 +221,8 @@
 				<div class="footer_tel flex">
 					<div class="logo_item coordination">
 						<img src="images/teleph.svg" alt="">&nbsp &nbsp
-						<a href="tel:++380675585101">+380675585101;</a> &nbsp
-						<a href="+380503110184">+380503110184</a>
+						<a href="tel:+380675585101">+380675585101;</a> &nbsp
+						<a href="tel:+380503110184">+380503110184</a>
 					</div>
 					<div class="logo_item">
 						<img src="images/mail.svg" alt="">&nbsp &nbsp<a href="mailto:tovstv2020@gmail.com"> tovstv2020@gmail.com</a>
@@ -240,28 +246,20 @@
 
 
 		<div id="test-modal" class="mfp-hide white-popup-block">
-			< <form class="forms grid" id="callback">
-
-				<h3>Форма зворотнього зв'язку</h3>
-
-				<label>
-					<input type="text" name="name" placeholder="ПІБ" required>
-				</label>
-
-				<label>
-					<input type="text" name="phone" placeholder="Телефон" required>
-				</label>
-				<label>
-					<input type="text" name="mail" placeholder="E-mail">
-				</label>
-
+			<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkorgrp"
+				method="post">
+				<h3 class="forms_text">Форма зворотнього зв’язку</h3>
+				<fieldset id="fs-frm-inputs">
+					<input type="text" name="ім'я" id="full-name" placeholder="ПІБ" required="">
+					<input type="email" name="пошта" id="email-address" placeholder="E- mail" required="">
+					<input type="telephone" name="телефон" id="telephone" placeholder="Телефон">
+					<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+				</fieldset>
 				<div class="button-wrap grid">
-					<a href="" class="button">Зв'язатись</a>
+					<button class="button" type="submit">Зв'язатись</button>
 				</div>
 
-				<input type="hidden" name="formname" value="">
-
-				</form>
+			</form>
 		</div>
 
 	</div>

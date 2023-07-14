@@ -113,7 +113,10 @@
 	.smaragd::after {
 		top: 85px;
 	}
-
+	.slider__item{
+		margin: auto;
+		padding: 0 15px;
+	}
 	.advantages li {
 		font-size: 18px;
 	}
@@ -135,7 +138,7 @@ margin-top: 25px;
 	}
 
 	.dolomite_top h4 span {
-		right: 50;
+		right: 50px;
 		padding-left: 100px;
 		font-size: 25px;
 	}
@@ -152,7 +155,7 @@ margin-top: 25px;
 		width: 50px;
 	}
 	.round span:after {
-		top: 0px;
+		top:0;
 		left: -9px;
 		height: 50px;
 		width: 50px;
@@ -246,9 +249,6 @@ display: none;
 		padding: 20px 20px;
 		grid-template-columns: 1fr ;
 	}
-	.logo_item{
-		margin-left:0;
-	}
 	.qualiti {
 		margin-bottom: calc(var(--gap)*2);
 		font-size: 40px;
@@ -274,7 +274,7 @@ display: none;
 
 	.headers {
 		min-height: 40vh;
-		padding: 10px 20px 0px;
+		padding: 10px 20px 0;
 		grid-template-columns: 50% 50%;
 		align-items: start;
 		justify-items: start;
@@ -317,7 +317,10 @@ display: none;
 		line-height: 55px;
 
 	}
-
+	.slider__item{
+		margin: auto;
+		padding: 0 15px;
+	}
 	.header_text {
 		grid-column: span 2;
 		width: 100%;
@@ -327,31 +330,82 @@ display: none;
 		margin-top: 15px;
 		margin-bottom: 30px;
 	}
+	#test-modal {
+		width: 400px;
+	}
 }
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
+	.work_bottom {
+		-webkit-box-shadow: -5px 3px 7px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: -5px 3px 7px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: -5px 3px 7px 0px rgba(0, 0, 0, 0.75);
+	}
+	.work {
+		height: 236px;
+	}
+	.work p {
+		font-size: 14px;
+		gap: 7px;
+		margin-bottom: 20px;
+	}
+	.footer_tel {
+		font-size: 13px;
+	}
+	.slider .slick-dots button, .slider-card .slick-dots button{
+		width: 53px;
+	}
 	.dolomite_top h4 span:after {
 		left: 61px;
 	}
 	.dolomite_top h4 span{
 		padding-left: 74px;
 	}
-
+	.dolomite_top h4 span {
+		right: 28px;
+		font-size: 20px;
+	}
+	.dolomite_top h4 span::after {
+		top: -9px;
+		left: 60px;
+	}
+	.dolomite_bottom h4 span {
+		font-size: 20px;
+	}
+	.line::before {
+		right: -9px;
+	}
+	.line {
+		padding-left: 58px;
+	}
+	.round span::after {
+		left: -15px;
+	}
 	.dolomite_top h3 {
 		font-size: 20px;
 		line-height: 24px;
 	}
 	.dolomite_top h4,
 	.dolomite_bottom h4 {
-		font-size: 16px;
+		font-size: 13px;
 		line-height: 20px;
 	}
-
-	.footer_menu .logo_item {
-		text-align: center;
+	footer.footer {
+		margin-top: 30px;
 	}
-
+	.footer_menu .logo_item ul {
+		margin-left:-15px;
+		text-align: left;
+		color: #FFFFFF;
+	}
+	.around {
+		margin: 0 3px 3px 0;
+	}
+	.info_img {
+		background-size: cover;
+		background-position: top;
+	}
 	.footer_menu .logo_item ul {
 		display: inline-flex;
 	}
@@ -376,6 +430,7 @@ display: none;
 	}
 	.slider__item{
 		margin: auto;
+		padding: 0 15px;
 	}
 	.main_work_bottom {
 		background-color: #fff;
@@ -423,7 +478,9 @@ display: none;
 		margin-top: 15px;
 		margin-bottom: 30px;
 	}
-
+	#test-modal {
+		width: 300px;
+	}
 	.catalog_items {
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	}
@@ -436,7 +493,6 @@ display: none;
 
 .advantages li {
 	font-size: 16px;
-}
 }
 
 
