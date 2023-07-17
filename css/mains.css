@@ -434,8 +434,18 @@ display: none;
 	line-height: 64px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #509121;
-	margin-bottom: 50px;
+	color: #509121;	
+}
+.details{
+margin-bottom: 50px;
+
+font-size: 20px;
+}
+.details a{
+font-family: "roboto-st";
+color:var(--accent);
+margin-left: var(--gap);
+font-style: italic;
 }
 
 .slider-card .dolomite {
